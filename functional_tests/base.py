@@ -51,7 +51,7 @@ class FunctionalTest(StaticLiveServerTestCase):
         if self.against_staging:
             reset_database(self.server_host)
 
-        self.browser = webdriver.PhantomJS('C:\Program Files (x86)\phantomjs\bin\phantomjs.exe')
+        self.browser = webdriver.PhantomJS()
 
 
     def tearDown(self):
